@@ -1,0 +1,20 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+
+  --primary-color: hsl(4, 100%, 67%);
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  --dark-slate-color:hsl(234, 29%, 20%);
+  --charcoal-grey-color: hsl(235, 18%, 26%);
+  --grey-color: hsl(231, 7%, 60%);
+  --white-color: hsl(0, 0%, 100%);
+  --font-family: 'Roboto', sans-serif;
+  --font-weight-thick: 400;
+  --font-weight-thicker: 700;
+}
