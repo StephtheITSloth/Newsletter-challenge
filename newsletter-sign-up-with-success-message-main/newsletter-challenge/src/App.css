@@ -1,11 +1,12 @@
 *, ::before, ::after{
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+:root{
 
   --primary-color: hsl(4, 100%, 67%);
   --mobile-width: 375px;
@@ -15,6 +16,134 @@ body{
   --grey-color: hsl(231, 7%, 60%);
   --white-color: hsl(0, 0%, 100%);
   --font-family: 'Roboto', sans-serif;
-  --font-weight-thick: 400;
-  --font-weight-thicker: 700;
+  --font-weight-reg: 400;
+  --font-weight-bold: 700;
+}
+
+body{
+  width: 100%;
+  font-family: var(--font-family);
+  background-color: var(--charcoal-grey-color);
+  color: var(--dark-slate-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.container{
+  background-color: var(--white-color);
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 25px;
+
+}
+
+.content{
+  color:var(--dark-slate-color);
+  background-color: var(--white-color);
+  flex-basis: content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+.content h1{
+  font-size: 5ch;
+  margin-bottom: 32px;
+}
+
+.content p{
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.product_selling-points{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.product_selling-points div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content svg{
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.content h5{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: var(--font-weight-reg);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+label{
+  font-size: 10;
+  font-weight: var(--font-weight-bold);
+}
+
+input{
+  width: 80%;
+  padding: 15px 15px;
+  border: 1px solid var(--grey-color);
+  border-radius: 3px;
+}
+
+input:active{
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button{
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--dark-slate-color);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: var(--white-color);
+  width: 80%;
+  padding: 15px 15px;
+}
+
+button:hover{
+  background-color: var(--primary-color);
+  box-shadow: 0px 20px 42px -10px var(--primary-color);
+
+}
+
+.image-container{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container svg{
+  object-fit: fill;
 }
